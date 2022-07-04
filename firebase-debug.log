@@ -1,0 +1,45 @@
+[debug] [2022-07-04T15:05:33.372Z] ----------------------------------------------------------------------
+[debug] [2022-07-04T15:05:33.375Z] Command:       /Users/mac/.nodebrew/node/v16.13.0/bin/node /Users/mac/.nodebrew/current/bin/firebase serve
+[debug] [2022-07-04T15:05:33.375Z] CLI Version:   11.2.0
+[debug] [2022-07-04T15:05:33.375Z] Platform:      darwin
+[debug] [2022-07-04T15:05:33.375Z] Node Version:  v16.13.0
+[debug] [2022-07-04T15:05:33.377Z] Time:          Tue Jul 05 2022 00:05:33 GMT+0900 (日本標準時)
+[debug] [2022-07-04T15:05:33.377Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-04T15:05:33.452Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-04T15:05:33.452Z] > authorizing via signed-in user (takumi32183@gmail.com)
+[debug] [2022-07-04T15:05:33.453Z] [iam] checking project murmur-fd8dc for permissions ["firebase.projects.get"]
+[debug] [2022-07-04T15:05:33.455Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/murmur-fd8dc:testIamPermissions [none]
+[debug] [2022-07-04T15:05:33.455Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/murmur-fd8dc:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-04T15:05:34.221Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/murmur-fd8dc:testIamPermissions 200
+[debug] [2022-07-04T15:05:34.222Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/murmur-fd8dc:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-04T15:05:34.223Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/murmur-fd8dc [none]
+[debug] [2022-07-04T15:05:34.512Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/murmur-fd8dc 200
+[debug] [2022-07-04T15:05:34.512Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/murmur-fd8dc {"projectId":"murmur-fd8dc","projectNumber":"326778191723","displayName":"murmur","name":"projects/murmur-fd8dc","resources":{"hostingSite":"murmur-fd8dc","realtimeDatabaseInstance":"murmur-fd8dc-default-rtdb","storageBucket":"murmur-fd8dc.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/mac/Desktop/murmur-lesson'...
+[info] 
+[debug] [2022-07-04T15:05:34.516Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/murmur-fd8dc/sites 
+[debug] [2022-07-04T15:05:34.624Z] Error: Cannot find module '/Users/mac/Desktop/murmur-lesson/functions/package.json'
+Require stack:
+- /Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js
+- /Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/commands/index.js
+- /Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/index.js
+- /Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at FunctionsEmulator.getNodeBinary (/Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:576:21)
+    at FunctionsEmulator.start (/Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:192:39)
+    at Function.start (/Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/emulator/registry.js:16:24)
+    at EmulatorServer.start (/Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/emulator/emulatorServer.js:17:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async FunctionsServer.start (/Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/serve/functions.js:53:9)
+    at async Promise.all (index 1)
+    at async serve (/Users/mac/.nodebrew/node/v16.13.0/lib/node_modules/firebase-tools/lib/serve/index.js:20:5)
+[error] 
+[error] Error: An unexpected error has occurred.
