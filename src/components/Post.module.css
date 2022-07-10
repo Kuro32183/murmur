@@ -10,7 +10,7 @@
 
 .post_body {
     flex: 1;
-    padding: 10px;
+    padding: 5px;
 }
 
 .post_header>h3 {
@@ -27,7 +27,7 @@
 
 .post_headerTime {
     font-size: 14px;
-    color: gray;
+    color: rgb(70, 70, 70);
 }
 
 .post_tweet {
