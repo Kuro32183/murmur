@@ -47,8 +47,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(10),
   },
   image: {
-    backgroundImage:
-      'url(https://images.unsplash.com/photo-1516485392461-3961cc21f1e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)',
+    backgroundImage: 'url(https://source.unsplash.com/random)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
       theme.palette.type === 'light'
