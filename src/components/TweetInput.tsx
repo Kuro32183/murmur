@@ -76,7 +76,7 @@ function TweetInput() {
           />
           <input
             className={styles.tweet_input}
-            placeholder="What's happening?"
+            placeholder="今日のMurMurを投稿してみよう！"
             type="text"
             autoFocus
             value={tweetMsg}
@@ -105,7 +105,7 @@ function TweetInput() {
             tweetMsg ? styles.tweet_sendBtn : styles.tweet_sendDisableBtn
           }
         >
-          Tweet
+          MurMur!
         </Button>
       </form>
     </>

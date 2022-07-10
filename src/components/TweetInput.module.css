@@ -1,5 +1,5 @@
 .tweet_form {
-    margin: 40px;
+    margin: 20px;
     position: relative;
     display: flex;
 }
@@ -10,7 +10,7 @@
 }
 
 .tweet_input {
-    margin-left: 40px;
+    margin-left: 30px;
     width: 90%;
     background-color: #e1e1e1;
     padding: 15px;
@@ -54,8 +54,8 @@
     font-weight: 900 !important;
     text-transform: inherit !important;
     border-radius: 30px !important;
-    width: 80px;
+    width: 100px;
     height: 40px !important;
-    margin-left: 80% !important;
+    margin-left: 75% !important;
     cursor: none !important;
 }

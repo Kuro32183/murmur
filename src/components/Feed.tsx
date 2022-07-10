@@ -39,6 +39,10 @@ const Feed: React.FC = () => {
 
   return (
     <div className={styles.feed}>
+      <h1 className={styles.title}>
+        {' '}
+        Mur<span className={styles.titleColor}>M</span>ur{' '}
+      </h1>
       <TweetInput />
 
       {posts[0]?.id && (
